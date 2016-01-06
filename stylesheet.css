@@ -1,1 +1,15 @@
-//stylesheet//
+body {
+  background-color: #ffd700;
+
+}
+
+h1 {
+  text-align: center;
+  color: #dc143c;
+  font-family: fantasy;
+  font-size: 60px;
+}
+
+#cup {
+  text-decoration: underline;
+}
