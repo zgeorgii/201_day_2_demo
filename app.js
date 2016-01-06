@@ -4,7 +4,7 @@ alert('Correct, ' + userName + ' Next question...');
 console.log('The user\'s name is ' + 'userName');
 
 var answer1 = prompt('WHAT, is your favorite color?');
-  if (answer1.length < 6 || answer1.length > 3) {
+  if (answer1.length < 6 && answer1.length > 3) {
     alert('CORRECT!, last question...');
   }
   else {
@@ -30,7 +30,7 @@ var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
       The Holy Grail is yours!');
     }
     else if (userNumber > 5 && computerNumber > 5) {
-      alert('You drink the water, shit out your guts and die...');
+      alert('You drink the water, shit your guts out and die...');
 
     }
     else {
