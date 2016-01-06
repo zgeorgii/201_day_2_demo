@@ -19,9 +19,9 @@ var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
     alert('To the pits with you!!!');
   }
 
-    alert('You may pass the bridge of death if all were answered correctly');
+    alert('You may pass the bridge of death if all were answered correctly.');
 
-    alert('You enter the room of The Holy Grail');
+    alert('You enter the room of The Holy Grail!');
 
   var userNumber = prompt('Pick a cup, they are numbered 1-10');
   var computerNumber = Math.floor((Math.random() * 10) + 1);
