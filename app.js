@@ -12,8 +12,8 @@ var answer1 = prompt('WHAT, is your favorite color?');
     alert('INCORRECT! To the pits with you!!!');
   }
 
-var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow? A)13mps B)10mps C)15mps D)African or European swollow?');
-  if (answer2 === "D" || "d") {
+var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
+  if (answer2 === "African or European?" || "african or european?") {
     alert('Huh? I don\'t know that... AHHHH!!!');
   }
   else {
