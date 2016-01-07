@@ -1,7 +1,7 @@
 
 function myGuessingGame(){
 var userName = prompt('WHAT, is your name?');
-alert('Correct, ' + userName + ' Next question...');
+alert('CORRECT!, ' + userName + '. Next question...');
 console.log('The user\'s name is ' + 'userName');
 
 var answer1 = prompt('WHAT, is your favorite color?');
@@ -13,7 +13,7 @@ var answer1 = prompt('WHAT, is your favorite color?');
   }
 
 var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
-  if (answer2 === 'African or European?' || 'african or european?') {
+  if (answer2 === 'African or European?' || answer2 === 'african or european?') {
     alert('Huh? I don\'t know that... AHHHH!!!');
   }
   else {
