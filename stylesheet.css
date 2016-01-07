@@ -13,3 +13,12 @@ h1 {
 #cup {
   text-decoration: underline;
 }
+
+img {
+  border: 8px solid #dc143c;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 300px;
+  height: 375px;
+}
