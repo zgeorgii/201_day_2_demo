@@ -13,7 +13,7 @@ var answer1 = prompt('WHAT, is your favorite color?');
 
 var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
   if (answer2 === 'African or European?' || 'african or european?') {
-    alert('I don\'t know... AHHHH!!!');
+    alert('Huh? I don\'t know that... AHHHH!!!');
   }
   else {
     alert('To the pits with you!!!');
@@ -37,6 +37,8 @@ var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
       alert('You are a Pu*** and refuse to drink out of any cup... \
       Your journey was for nothing.');
     }
+
+      alert('If you got the Holy Grail go ahead and click on it ;)')
 
   var grail_img = document.images["jsbutton"];
     function changeImage() {
