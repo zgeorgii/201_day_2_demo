@@ -7,6 +7,15 @@ function myGuessingGame(){
   var ans4 = document.getElementById('res4');
   var counter = 0;
 
+  //var questData = [[first quest stuff],[second quest stuff]]
+  //var questData = [[quest, userName, answer1, answer2, userNumber]]
+  //var questData = [['WHAT, is your name?',
+
+//],[ ]]
+//for (var = 1; i < questData.length; i++) {
+//questions(); }
+
+
 function firstQ() {
   var userName = prompt('WHAT, is your name?');
   ans1.textContent = 'CORRECT!, ' + userName + '. Next question...';
