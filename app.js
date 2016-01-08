@@ -1,45 +1,79 @@
 
 function myGuessingGame(){
-var userName = prompt('WHAT, is your name?');
-alert('CORRECT!, ' + userName + '. Next question...');
-console.log('The user\'s name is ' + 'userName');
 
-var answer1 = prompt('WHAT, is your favorite color?');
-  if (answer1.length < 6 && answer1.length > 3) {
-    alert('CORRECT!, last question...');
-  }
-  else {
-    alert('INCORRECT! To the pits with you!!!');
-  }
+  var ans1 = document.getElementById('res1');
+  var ans2 = document.getElementById('res2');
+  var ans3 = document.getElementById('res3');
+  var ans4 = document.getElementById('res4');
 
-var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
-  if (answer2 === "African or European?" || "african or european?") {
-    alert('Huh? I don\'t know that... AHHHH!!!');
-  }
-  else {
-    alert('To the pits with you!!!');
-  }
+function firstQ() {
+  var userName = prompt('WHAT, is your name?');
+  //alert('CORRECT!, ' + userName + '. Next question...');
+  ans1.textContent = 'CORRECT!, ' + userName + '. Next question...';
+  console.log('The user\'s name is ' + 'userName');
+}
 
+function secondQ() {
+  var answer1 = prompt('WHAT, is your favorite color?');
+    if (answer1.length < 6 && answer1.length > 3) {
+    //alert('CORRECT!, last question...');
+    ans2.textContent = 'CORRECT!, last question...';
+  }
+    else {
+    //alert('INCORRECT! To the pits with you!!!');
+    ans2.textContent = 'INCORRECT! To the pits with you!!!';
+  }
+}
+
+function thirdQ() {
+  var answer2 = prompt('WHAT, is the airspeed velocity of an unladen swallow?');
+    if (answer2 === "African or European?" || answer2 === "african or european?") {
+    //alert('Huh? I don\'t know that... AHHHH!!!');
+    ans3.textContent = 'Huh? I don\'t know that... AHHHH!!!';
+  }
+    else {
+    //alert('To the pits with you!!!');
+    ans3.textContent = 'To the pits with you!!!';
+  }
+}
+function passBridge() {
     alert('You may pass the bridge of death if all were answered correctly.');
 
     alert('You enter the room of The Holy Grail!');
+  }
 
+function fourthQ() {
   var userNumber = prompt('Pick a cup, they are numbered 1-10');
   var computerNumber = Math.floor((Math.random() * 10) + 1);
     if (userNumber <= 5 && computerNumber <= 5) {
-      alert('You drink the water and embrace the feeling of immortality! \
-      The Holy Grail is yours!');
+      //alert('You drink the water and embrace the feeling of immortality! \
+      //The Holy Grail is yours!');
+      ans4.textContent = 'You drink the water and embrace the feeling of immortality! \
+      The Holy Grail is yours!';
     }
     else if (userNumber > 5 && computerNumber > 5) {
-      alert('You drink the water, shit your guts out and die...');
+      //alert('You drink the water, shit your guts out and die...');
+      ans4.textContent = 'You drink the water, shit your guts out and die...';
 
     }
     else {
-      alert('You are a Pu*** and refuse to drink out of any cup... \
-      Your journey was for nothing.');
+      //alert('You are a Pu*** and refuse to drink out of any cup... \
+      //Your journey was for nothing.');
+      ans4.textContent = 'You are a Pu*** and refuse to drink out of any cup... \
+      Your journey was for nothing.';
+    }
+  }
+function youWin() {
+      alert('If you got the Holy Grail go ahead and click on it ;)');
     }
 
-      alert('If you got the Holy Grail go ahead and click on it ;)');
+      firstQ();
+      secondQ();
+      thirdQ();
+      passBridge();
+      fourthQ();
+      youWin();
+
 }
   var grail_img = document.images['jsbutton'];
     function changeImage() {
